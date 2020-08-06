@@ -17,6 +17,7 @@ namespace TiendaServicios.Api.Libro.Tests
         //Para generar la data, se instalara un paquete que permite crear data falsa y no tocar la base de datos. desde nuget GenFu
         private IEnumerable<LibreriaMaterial> ObtenerDataPrueba()
         {
+            //Este metodo es para llenar con data genfu
             A.Configure<LibreriaMaterial>()
                 .Fill(x => x.Titulo).AsArticleTitle()
                 .Fill(x => x.LibreriaMaterialID, () => { return Guid.NewGuid(); });
