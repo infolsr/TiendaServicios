@@ -90,7 +90,7 @@ namespace TiendaServicios.Api.Libro.Tests
         public async void GuardarLibro()
         {
             //solo usar debugger en uno de los metodos. asegurarse de borrar de los demás si existe.
-            System.Diagnostics.Debugger.Launch();
+            //System.Diagnostics.Debugger.Launch();
 
             var options = new DbContextOptionsBuilder<ContextoLibreria>()
                 .UseInMemoryDatabase(databaseName: "BaseDatosLibro")
